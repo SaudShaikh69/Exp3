@@ -1,0 +1,105 @@
+<!doctype html>
+<!doctype html>
+<html>
+<body>
+<script>
+  var numOne=12, numTwo=10, res;
+  res = numOne + numTwo;
+  document.write("Add = " + res + "<br/>");
+  let num1 = 30 , num2 = 20
+  res = num1 - num2;
+  document.write("Subtract = " + res + "<br/>");
+  const numb1 = 20,numb2=10
+  res = numb1 * numb2;
+  document.write("Multiply = " + res + "<br/>");
+  res = numb1/numb2;
+  document.write("Divide = " + res + "<br/>");
+</script>
+</body>
+</html>
+
+
+( (using conditions FOR, IF ELSE, Break, Continue) write a code for Persons age iseligible for Voting or not.)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <input type="text" id="age" placeholder="enter age for vote"><br>
+    <button id="btn">Submit Age</button>
+    <script>
+        document.querySelector("#btn").onclick=function(){
+            if(document.querySelector("#age").value >=18)
+                alert("Eligible for Voting! ")
+            else
+                alert("Not Eligible for Voting! ")
+        }
+    </script>
+</body>
+</html>
+
+
+(3 LOOPING (While Loop , DO-while LOOP , Switch Case) Write a Program to find grade of student .)
+
+<html>
+<heady>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</heady>
+<body>
+<input type="text" id="grade" placeholder="enter your grade"><br>
+    <button id="btn">Submit</button>
+<script>
+    document.querySelector("#btn").onclick=function(){
+       let grade = document.querySelector("#grade").value    
+    switch(true)
+        {
+             case grade>= 95:
+                alert("You got A+");
+                break;
+            case grade<95 && grade>= 90:
+                alert("You got A");
+                break;   
+            case grade<90 && grade>=85:
+                alert("You got A-");
+                break;
+            case grade<85 && grade>=80:
+                alert("You got B+");
+                break;
+            case grade<80 && grade>=75:
+                alert("You got B");
+                break;
+            case grade<75 && grade>=70:
+                alert("You got B-");
+                break;
+            case grade<70 && grade>=65:
+                alert("You got C+");
+                break;
+            case grade<65 && grade>=60:
+                alert("You got C");
+                break;
+            case grade<60 && grade>=55:
+                alert("You got C-");
+                break;
+            case grade<55 && grade>=50:
+                alert("You got D");
+                break;
+            case grade<50:
+                alert("You FAILED");  
+                break;
+             default:
+                alert("Wrong Number"); 
+        }
+}
+</script>
+</body>
+</html>
+
+
